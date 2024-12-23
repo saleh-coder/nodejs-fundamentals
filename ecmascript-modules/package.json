@@ -1,0 +1,16 @@
+{
+  "name": "ecmascript-modules",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "_comment_type": "This tells Node.js to use ECMAScript module syntax (import/export) in all files inside the 'ecmascript-modules' folder. It doesn't affect files outside this folder unless they also have their own 'package.json' with 'type': 'module'.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "_comment_test": "This is a placeholder script for running tests. Replace it with a real test script.",
+  "keywords": [],
+  "_comment_keywords": "Used to categorize and improve the project's visibility on npm.",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
