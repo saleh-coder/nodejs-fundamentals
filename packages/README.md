@@ -1,37 +1,77 @@
-# Node.js Fundamentals
+# Node.js Projects in the `packages/` Folder
 
-This repository is intended for **study purposes** to explore and learn the fundamentals of **Node.js**. It contains various projects and examples to help you understand key concepts and tools used in Node.js development.
+This folder contains multiple Node.js projects, each configured to work with both **npm** and **yarn**. The setup is organized into distinct directories, with shared configurations and dependencies under `about-package-json`.
 
 ## 📁 Directory Structure
 
 ```
-nodejs-fundamentals/
-├── about-node/             # Documentation and resources about Node.js
-├── ecmascript-modules/     # Example of ECMAScript modules in Node.js
-├── node-modules/           # Custom Node.js modules and packages
-└── packages/               # Contains multiple Node.js projects
+packages/
+├── about-package-json/  # Configuration files for npm and yarn
+├── project_1/           # Simple web server showing current time in various cities
+├── project_2/           # Scrapes quotes and saves them to a file
+└── project_3/           # CLI program to manage user data
 ```
 
-### 🗂 **about-node**
+### 🗂 **about-package-json**
 
-This folder includes documentation and resources to learn about **Node.js** core concepts and how it compares to other platforms.
+The `about-package-json` folder contains configuration files for **npm** and **yarn** package managers, including dependencies and lock files.
 
-### 🗂 **ecmascript-modules**
+- **npm**:
 
-An example project demonstrating the use of **ECMAScript modules** in Node.js. It includes the setup for `import`/`export` and how to use them in a Node.js environment.
+  - Uses **npm** as the package manager.
+  - Dependencies are listed in `npm/package.json`.
+  - Lock files are managed with **npm** in `npm/package-lock.json`.
 
-### 🗂 **node-modules**
+- **yarn**:
+  - Uses **yarn** as the package manager.
+  - Dependencies are listed in `yarn/package.json`.
+  - Lock files are managed with **yarn** in `yarn/yarn.lock`.
 
-Contains custom **Node.js modules** that are used across different projects in this repository. These modules illustrate how to write and organize reusable code in Node.js.
+Common dependencies like `node-emoji`, `chalk`, and others are used across the configurations.
 
-### 🗂 **packages**
+### 🗂 **project_1**
 
-This directory contains several subprojects, each demonstrating a different Node.js use case:
+**Project 1** is a simple web server application that displays the current time in various cities based on their time zones.
 
-- **`about-package-json/`**: Configuration files for npm and yarn package managers.
-- **`project_1/`**: A simple web server project.
-- **`project_2/`**: A project to scrape quotes and save them in a file.
-- **`project_3/`**: A CLI tool to manage user data with basic CRUD operations.
+- **Dependencies**:
+
+  - `chalk`: For colorizing console output.
+  - `luxon`: For handling and formatting date and time.
+  - `server`: A simple HTTP server library.
+
+- **Usage**:
+  - The server runs on port `8080`. You can access different routes such as `/roma`, `/luanda`, `/seoul`, and `/cuiaba` to get the current time in those cities.
+
+For implementation details, refer to the `index.js` file in the `project_1` directory.
+
+### 🗂 **project_2**
+
+**Project 2** scrapes quotes or thoughts from the internet based on an author's name and saves them to a file.
+
+- **Dependencies**:
+
+  - `pensador-scrap`: A library to scrape quotes.
+  - `fs`: For file operations to store scraped quotes.
+
+- **Usage**:
+  - The script fetches thoughts by **Alan Turing** and saves them in `phrases.txt`.
+  - You can change the author name or modify the script to fetch quotes from other authors.
+
+For implementation details, check the `index.js` file in the `project_2` directory.
+
+### 🗂 **project_3**
+
+**Project 3** is a command-line interface (CLI) program to manage user data with operations like adding, editing, deleting, and viewing user information. The data is stored in `bank.json`.
+
+- **Dependencies**:
+
+  - `terminal-kit`: For interactive CLI menus.
+  - `uuid`: For generating unique user IDs.
+
+- **Usage**:
+  - Users can interact with the program via a menu system to manage user data.
+
+For full instructions and code, refer to the `index.js` file in the `project_3` directory.
 
 ## 🚀 How to Use
 
@@ -46,17 +86,33 @@ This directory contains several subprojects, each demonstrating a different Node
    ```
 
 2. **Run the Projects**:
+   Navigate to the specific project folder (e.g., `project_1`).
 
-   - Navigate to the specific project folder (e.g., `project_1`).
-   - Run the project using:
+   - For `project_1`, use the following command to run the server:
 
      ```bash
      node index.js
      ```
 
-3. **Interact with Project 3**:
-   - `project_3` runs an interactive CLI program for managing user data. Simply start the project with `node index.js` and follow the on-screen prompts.
+   - For `project_2`, run the script that scrapes quotes:
+
+     ```bash
+     node index.js
+     ```
+
+   - For `project_3`, the CLI program allows you to interact with user data. Start the program with:
+
+     ```bash
+     node index.js
+     ```
+
+   After running the command for `project_3`, follow the on-screen prompts to manage user data.
 
 ## 📄 License
 
-This repository is for **study purposes** and is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This folder is part of the **Node.js Fundamentals** project and is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+```
+
+Com este código, você tem o **README.md** completo, pronto para ser usado em seu projeto, sem partes faltando ou fragmentadas.
+```
