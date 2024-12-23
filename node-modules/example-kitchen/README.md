@@ -17,6 +17,4 @@ This module simulates various kitchen actions such as cooking, baking, and servi
 1. Run `node index.js` to execute the example kitchen simulations.
 2. Explore individual files to understand how actions and food items are modularized.
 
----
-
 Happy cooking simulation!

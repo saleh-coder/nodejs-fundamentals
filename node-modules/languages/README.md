@@ -13,6 +13,4 @@ This module introduces basic internationalization (i18n) with support for multip
 1. Run `node index.js` to display greetings in English or Portuguese.
 2. Add more language files to extend the supported languages.
 
----
-
 Enhance your global application experience!

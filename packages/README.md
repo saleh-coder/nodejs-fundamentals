@@ -1,5 +1,3 @@
----
-
 # Node.js Fundamentals
 
 This repository is intended for **study purposes** to explore and learn the fundamentals of **Node.js**. It contains various projects and examples to help you understand key concepts and tools used in Node.js development.
@@ -62,5 +60,3 @@ This directory contains several subprojects, each demonstrating a different Node
 ## 📄 License
 
 This repository is for **study purposes** and is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
